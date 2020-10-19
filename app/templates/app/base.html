@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja"">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <title>カスタム認証</title>
+</head>
+<body>
+{%  include 'app/navbar.html' %}
+ 
+<main>
+<div class="container">
+
+        {% block content %}
+        {% endblock %}
+
+</div>
+</main>
+<footer class="py-2 bg-dark">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Name</p>
+</footer>
+    {% block extra_js %}
+    {% endblock %}
+</body>
+</html>
