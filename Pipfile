@@ -10,6 +10,8 @@ flake8 = "*"
 [packages]
 django = "*"
 django-widget-tweaks = "*"
+django-environ = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.8"
